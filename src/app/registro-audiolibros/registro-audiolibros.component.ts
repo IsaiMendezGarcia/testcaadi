@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registro-audiolibros',
@@ -9,4 +10,8 @@ import { Component } from '@angular/core';
 })
 export class RegistroAudiolibrosComponent {
 
+  constructor(private router: Router) {}
+  regresar(){
+    this.router.navigate(['/uso-material']);
+  }
 }

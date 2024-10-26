@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-regristro-libros',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './regristro-libros.component.css'
 })
 export class RegristroLibrosComponent {
+
+    constructor(private router: Router) {}
+    regresar(){
+      this.router.navigate(['/uso-material']);
+    }
 
 }
